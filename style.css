@@ -1,0 +1,22 @@
+body {
+background-color: teal;
+}
+
+.container {
+max-width: 900px;
+margin: 0%;
+padding: 300px;
+display: flex;
+justify-content: center;
+text-align: center;
+height: 100vh;
+}
+
+.quiz-box {
+width: 600px;
+margin: 0 auto;
+background-color:beige;
+height: 400px;
+padding: 1rem 5rem 5rem 5rem;
+
+}
