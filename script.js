@@ -98,3 +98,26 @@ function showScores() {
     let quizElement = document.getElementById("quiz");
     quizElement.innerHTML = quizEndHTML;
 }
+
+// Quiz questions
+
+let questions =[
+
+    new Question("How can you print information to the console",["console.log(info)", "console", "console.log", "print(info)"] , "console.log(info)"
+    ),
+    new Question (
+        "What keyword is used to create a JavaScript", ["varies", "variable", "string", "var"], "var"
+    ),
+    new Question (
+        "The # symbol specifies that the selector is?", ["class", "id", "tag", "first"], "id"
+    ),
+    new Question (
+        "What is jQuery?", ["A framework", "A library", "jQuery?", "none of these"], "A library"
+    ),
+    new Question (
+        "What is not an HTML5 element?" , ["blink", "section", "header", "footer"], "blink"
+    )
+];
+
+let quiz = new quiz (questions);
+
