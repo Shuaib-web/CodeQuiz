@@ -94,13 +94,14 @@ function showScores() {
     <h2 id="score">You scored: ${quiz.score} of ${quiz.questions.length}</h2>
     <div class ="quiz-repeat">
     <a href="index.html">Repeat Quiz</a>
+    <div class="complete"></div>
+    <form class="form-inline">
+    <div class="form-group">
+    <label for="inputPassword6">Enter Initials</label>
+    <input type="Initials" id="inputInitials" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
     </div>
-    <div class="btn-ei"></div>
-    <button>
-    <div class ="enter-initials">
-    <h3>Enter Initials</h3>
-    </div>
-    </button>
+    <input type="submit" value="Submit">
+    </form>
     </div>
     `;
     
