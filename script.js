@@ -1,6 +1,6 @@
 // Creating quiz CLASS
 
-class quiz {
+class Quiz {
 
 constructor(questions){
 
@@ -69,19 +69,21 @@ function displayQuestion () {
 function guess (id, guess){
     let button = document.getElementById(id);
     button.onclick = function (){
-        Quiz.guess(guess);
+        quiz.guess(guess);
         displayQuestion();
     }
 }
 
 //Quiz progress 
 
-function showProgress (){
+function showProgress() {
     let currentQuestionNumber = quiz.questionsIndex + 1;
     let progressElement = document.getElementById("progress");
     progressElement.innerHTML =
-    `Question ${currentQuestionNumber} of${quiz.question.length}`;
+    `Question ${currentQuestionNumber} of ${quiz.questions.length}`;
+    
 }
+
 
 //Show score 
 
@@ -89,10 +91,11 @@ function showScores() {
     let quizEndHTML = 
     `
     <h1>Quiz completed</h1>
-    <h2 id="score">You scored: ${quiz.score} of ${quiz.question.length}</h2>
+    <h2 id="score">You scored: ${quiz.score} of ${quiz.questions.length}</h2>
     <div class ="quiz-repeat">
     <a href="index.html">Repeat Quiz</a>
     </div>
+    
     `;
     
     let quizElement = document.getElementById("quiz");
@@ -119,5 +122,8 @@ let questions =[
     )
 ];
 
-let quiz = new quiz (questions);
+let quiz = new Quiz(questions);
+
+// display question
+displayQuestion();
 
