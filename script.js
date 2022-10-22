@@ -95,7 +95,13 @@ function showScores() {
     <div class ="quiz-repeat">
     <a href="index.html">Repeat Quiz</a>
     </div>
-    
+    <div class="btn-ei"></div>
+    <button>
+    <div class ="enter-initials">
+    <h3>Enter Initials</h3>
+    </div>
+    </button>
+    </div>
     `;
     
     let quizElement = document.getElementById("quiz");
@@ -106,16 +112,16 @@ function showScores() {
 
 let questions =[
 
-    new Question("How can you print information to the console",["console.log(info)", "console", "console.log", "print(info)"] , "console.log(info)"
+    new Question("How can you print information to the console?",["console.log(info)", "console", "console.log", "print(info)"] , "console.log(info)"
     ),
     new Question (
-        "What keyword is used to create a JavaScript", ["varies", "variable", "string", "var"], "var"
+        "What keyword is used to create a JavaScript?", ["varies", "variable", "string", "var"], "var"
     ),
     new Question (
         "The # symbol specifies that the selector is?", ["class", "id", "tag", "first"], "id"
     ),
     new Question (
-        "What is jQuery?", ["A framework", "A library", "jQuery?", "none of these"], "A library"
+        "What is jQuery?", ["A framework", "A library", "Debugging system ", "none of these"], "A library"
     ),
     new Question (
         "What is not an HTML5 element?" , ["blink", "section", "header", "footer"], "blink"
@@ -129,15 +135,15 @@ displayQuestion();
 
 // Adding a countdown
 
-let time = 5;
+let time = 1.00;
 let quizTimeInMinutes = time * 60 * 60;
-quizTime = quizTimeInMinutes / 60;
+let quizTime = quizTimeInMinutes / 60;
 
 let counting = document.getElementById("count-down");
 
 function startCountdown () {
     let quizTimer = setInterval(function() {
-        if (quizTimer <= 0){
+        if (quizTime <= 0){
             clearInterval(quizTimer);
             showScores();
         } else {
@@ -148,3 +154,4 @@ function startCountdown () {
         }
     },1000);
     }
+    startCountdown();

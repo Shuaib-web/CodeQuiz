@@ -100,7 +100,7 @@ body {
 .quiz-repeat a {
     font-size: 1.6rem;
     font-weight: 600;
-    color: white;
+    color: rgb(173, 171, 171);
     text-decoration: none;
     background-color:bisque ;
     padding: 1rem;
@@ -111,3 +111,19 @@ body {
 .quiz-repeat a:hover{
     background-color: teal
 }
+
+.enter-initials {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.enter-initials :hover{
+    background-color: teal
+}
+.btn-ei {
+    padding-bottom: 50px;
+    font-weight: 600;
+    background-col;
+
+}
+
