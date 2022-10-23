@@ -1,7 +1,8 @@
+/* Styling for the body */
 body {
     background-color: teal;
 }
-
+/* Styling for the container */
 .container {
     max-width: 900px;
     margin: 0%;
@@ -22,7 +23,7 @@ body {
     border-radius: 5px;
     text-align: center;
 }
-
+/* Styling for the h1 */
 .quiz-box h1 {
     font-size: 3rem;
     text-align: center;
@@ -33,7 +34,7 @@ body {
     width: 100%;
     border-radius: 100px;    
 }
-
+/* Styling for the header */
 .quiz-header{
     display: flex;
     justify-content: space-between;
@@ -43,6 +44,7 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
 }
+/* Styling for the countdown */
 .quiz-header #countdown{
     font-size: 1.2rem;
     font-weight: 700;
@@ -65,7 +67,7 @@ body {
 .button {
     margin: 1.5rem 0 4rem 0;
 }
-
+/* Styling for the button */
 .btn{
     text-align: left;
     width: 600px;
@@ -85,6 +87,7 @@ body {
 .btn:active{
     background-color: rgb(57, 163, 182);
 }
+/* Styling for the score id */
 #score {
     color: black;
     text-align: center;
@@ -124,6 +127,3 @@ body {
     width: 180px;
     display: inline-block;
 }
-
-
-
