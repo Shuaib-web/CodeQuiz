@@ -87,6 +87,15 @@ body {
 .btn:active{
     background-color: rgb(57, 163, 182);
 }
+
+.btn.correct {
+    background-color:green;
+}
+
+.btn.wrong {
+    background-color: red;
+}
+
 /* Styling for the score id */
 #score {
     color: black;

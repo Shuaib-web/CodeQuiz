@@ -7,10 +7,13 @@ constructor(questions){
     this.score = 0;
     this.questions= questions;
     this.questionsIndex= 0;
+    this.shuffledQuestions = questions.sort(() => Math.random() - .5)
 }
+
 
 getQuestionIndex(){
     return this.questions[this.questionsIndex];
+    
 }
 
 guess (answer) {
@@ -129,10 +132,15 @@ let questions =[
     )
 ];
 
+
+
 let quiz = new Quiz(questions);
+
+
 
 // display question
 displayQuestion();
+
 
 // Adding a countdown
 
