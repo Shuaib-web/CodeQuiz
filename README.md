@@ -11,3 +11,5 @@ GitHub Pages
 Javascript
 
  https://shuaib-web.github.io/CodeQuiz/
+
+![Code-Quiz-Screenshot](https://user-images.githubusercontent.com/72218203/197642921-abf28ed4-bfcd-4759-94b6-ae12dba2cff9.png)
