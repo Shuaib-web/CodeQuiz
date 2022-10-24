@@ -9,3 +9,5 @@ HTML
 CSS
 GitHub Pages
 Javascript
+
+ https://shuaib-web.github.io/CodeQuiz/
